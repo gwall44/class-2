@@ -13,5 +13,9 @@
 -- | 2019 | 30       |
 -- | 2020 | 30       |
 -- +------+----------+
+-- in often times indicates a group by
+-- don't put anything else in the "select" that isn't the aggeragte function or the thing you're grouping by
 
 
+SELECT year, COUNT(*) FROM teams
+GROUP BY year;
